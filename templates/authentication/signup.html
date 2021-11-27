@@ -1,35 +1,42 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
 </head>
 <body>
-    <h3>sign up</h3>
+    <h3>SIGN UP</h3>
+    <div class="form">
     <form action="/signup" method="post">
     {% csrf_token %}
-        <label for="">Username</label>
-        <input type="text" name="username" id="username" placeholder="Create a username(only letters and numbers" required>
+        <label for=""></label>
+        <input type="text" class="usernames" name="username" id="username" placeholder="USERNAME" required>
         <br>
-        <label for="">First Name</label>
-        <input type="text" name="fname" id="fname" placeholder="Enter your first name" required>
         <br>
-        <label for="">Last Name</label>
-        <input type="text" name="lname" id="lname" placeholder="Enter your Last name" required>
+        <label for=""></label>
+        <input type="text" class="firstn" name="fname" id="fname" placeholder="FIRST NAME" required>
         <br>
-        <label for="">Email Address</label>
-        <input type="email" name="email" id="email" placeholder="Enter your Email Address" required>
         <br>
-        <label for="">Password</label>
-        <input type="password" name="pass1" id="pass1" placeholder="Create your password" required>
+        <label for=""></label>
+        <input type="text" class="lastn" name="lname" id="lname" placeholder="LAST NAME" required>
         <br>
-        <label for="">Confirm your password</label>
-        <input type="password" name="pass2" id="pass2" placeholder="Confirm your password" required>
         <br>
-        <button type="submit" class="btn btn-primary">Sign Up</button>
+        <label for=""></label>
+        <input type="email" class="email"name="email" id="email" placeholder="EMAIL ADDRESS" required>
+        <br><br>
+        <label for=""></label>
+        <input type="password" class="password1" name="pass1" id="pass1" placeholder="PASSWORD" required>
+        <br><br>
+        <label for=""></label>
+        <input type="password"class="password2" name="pass2" id="pass2" placeholder="CONFIRM PASSWORD" required>
+        <br><br>    
+        <button type="submit" class="col align-self-center selecteduppertext">Sign Up</button>
     </form>
+    </div>
     
 </body>
 </html>

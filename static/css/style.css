@@ -1,0 +1,136 @@
+h3{
+    color: orange;
+    text-align:center;
+}
+
+h4{
+    color: orange;
+    text-align:center;
+}
+
+
+.selecteduppertext {
+    background-color: #FF7345;
+    vertical-align: middle;
+    font-weight: 600;
+    padding-top: 1.9vh;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    cursor: pointer;
+    /* box-shadow: 0 8px 16px 0 rgb(255 66 66 / 37%), 0 5px 10px 0 rgb(0 0 0 / 19%); */
+    width: 311px;
+    border:none;
+    border-radius: 10px;
+    
+}
+
+.usernames{
+    padding: 10px 75px;
+    border:orange;
+    background-color: rgb(246 246 246);
+    text-align: center;
+    
+}
+.firstn{
+    padding: 10px 75px;
+    border:orange;
+    background-color: rgb(246 246 246);
+    text-align: center;
+}
+.lastn{
+    padding: 10px 75px;
+    border:orange;
+    background-color: rgb(246 246 246);
+    text-align: center;
+}
+
+.email{
+    padding: 10px 75px;
+    border:orange;
+    background-color: rgb(246 246 246);
+    text-align: center;
+
+}
+
+.password1{
+    padding: 10px 75px;
+    border:orange;
+    background-color: rgb(246 246 246);
+    text-align: center;
+
+}
+
+.password2{
+    padding: 10px 75px;
+    border:orange;
+    background-color: rgb(246 246 246);
+    text-align: center;
+
+
+}
+ .form{
+    background-color: white;
+    box-shadow:sienna;
+    border-radius: 10px;
+    width: 400px;
+    height: 284px;
+    margin:auto;
+    justify-content: center;
+    display: flex;  
+      
+} 
+a:link {
+    text-decoration: none;
+    color: white;
+
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+
+.unselecteduppertext {
+    background-color: #ff744525;
+    font-weight: 600;
+    vertical-align: middle;
+    padding-top: 1.9vh;
+    font-family: 'Poppins', sans-serif;
+    color: #FF7345;
+    cursor: pointer;
+    width: 311px;
+    border: none;
+    border-radius:10px;
+
+}
+.frame{
+    background-color: rgb(246 246 246);
+    box-shadow:sienna;
+    border-radius: 10px;
+    width: 400px;
+    height: 284px;
+    margin: auto;
+
+
+}
+.uppertextbox {
+    text-align: center;
+    vertical-align: middle;   
+}
+
+.row {
+    text-align: center;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px; 
+    width: auto;  
+    height: auto;  
+    padding-top: 100px;  
+    font-size: 10px;  
+}
+
+html, body * {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}

@@ -1,10 +1,13 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
+   
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Authentication</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
 </head>
 <body>
 
@@ -22,12 +25,16 @@
     {% if user.is_authenticated %}
     <h3>Hello {{fname}}!</h3>
     <h4>You're successfully logged in.</h4>
-    <button type="submit"><a href="/signout">SignOut</a></button>
+    <button type="submit" ><a href="/signout">SignOut</a></button>
     {% else %}
-    <button type="submit"><a href="/signup">SignUp</a></button>
-    <br>
-    <br>
-    <button type="submit"><a href="/signin">SignIn</a></button>
-    {% endif %}   
+    <div class="frame">
+        <div class="row text-center uppertextbox">
+        <button type="submit" class="col align-self-center selecteduppertext"><a class="btn1" href="/signup">SignUp</a></button>
+        <br>
+        <br>
+        <button type="submit" class="col align-self-center unselecteduppertext"><a class="btn2" href="/signin">SignIn</a></button>
+        {% endif %}  
+        </div> 
+    </div>
 </body>
 </html>
