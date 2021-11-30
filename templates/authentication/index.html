@@ -19,7 +19,7 @@
   </button>
     </div>
     {% endfor %}
-
+    <div class="box">
     <h3>Welcome to our APP</h3>
 
     {% if user.is_authenticated %}
@@ -29,12 +29,11 @@
     {% else %}
     <div class="frame">
         <div class="row text-center uppertextbox">
-        <button type="submit" class="col align-self-center selecteduppertext"><a class="btn1" href="/signup">SignUp</a></button>
-        <br>
-        <br>
-        <button type="submit" class="col align-self-center unselecteduppertext"><a class="btn2" href="/signin">SignIn</a></button>
+        <button type="submit" class="col align-self-center selecteduppertext"><a class="btn1" href="/signup">Sign Up</a></button>
+        <button type="submit" class="col align-self-center unselecteduppertext" ><a class="btn2" href="/signin">Sign In</a></button>
         {% endif %}  
         </div> 
+        </div>
     </div>
 </body>
 </html>

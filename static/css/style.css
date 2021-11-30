@@ -1,10 +1,10 @@
-h3{
-    color: orange;
+/* h3{
+    color: black;
     text-align:center;
 }
 
 h4{
-    color: orange;
+    color: black;
     text-align:center;
 }
 
@@ -16,9 +16,9 @@ h4{
     padding-top: 1.9vh;
     font-family: 'Poppins', sans-serif;
     color: #FFFFFF;
-    cursor: pointer;
+    cursor: pointer; */
     /* box-shadow: 0 8px 16px 0 rgb(255 66 66 / 37%), 0 5px 10px 0 rgb(0 0 0 / 19%); */
-    width: 311px;
+    /* width: 311px;
     border:none;
     border-radius: 10px;
     
@@ -133,4 +133,86 @@ a:link {
 html, body * {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color:  #495057;
+    color: gold;
+}
+.box {
+    color: white;
+    border-color: yellow;
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:  #212529;
+    text-align: center;
+}
+.box h1 {
+    color: gold;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-shadow: 2px 2px black;
+    border-bottom: 1px solid black;
+}
+.box button[type = "submit"],
+.box input[type = "text"],
+.box input[type = "email"],
+.box input[type = "password"],
+.box button[type = "submit"] {
+    color: white;
+    border: 0;
+    background: none;
+    display: block; 
+    margin: 20px auto;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #3498db;
+    padding: 5px 25px;
+    border-radius: 10px;
+    transition: 0.25s;
+    
+}
+.box button[type = "submit"]:hover {
+    width: 280px;
+    border-color: rgb(0, 238, 255);
+}
+.box input[type = "text"]:hover {
+    width: 280px;
+    border-color: rgb(0, 238, 255);
+}
+.box input[type = "email"]:hover {
+    width: 280px;
+    border-color: rgb(0, 238, 255);
+}
+.box input[type = "password"]:hover {
+    width: 280px;
+    border-color: rgb(0, 238, 255);
+}
+.box button {
+   
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    /* text-decoration: none!important; */
+    padding: 10px 25px;
+    border-radius: 10px;
+    transition: 0.25s;   
+    
+}
+.box button a{
+    text-decoration: none;
+    color:white;
+}
+.box {
+    box-shadow: 5px 7px rgb(12, 10, 10);
+    border-color:white;
 }

@@ -9,31 +9,23 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
 </head>
 <body>
-    <h3>SIGN UP</h3>
-    <div class="form">
+    
+    <div class="box">
+        <h3>SIGN UP</h3>
     <form action="/signup" method="post">
     {% csrf_token %}
         <label for=""></label>
         <input type="text" class="usernames" name="username" id="username" placeholder="USERNAME" required>
-        <br>
-        <br>
         <label for=""></label>
         <input type="text" class="firstn" name="fname" id="fname" placeholder="FIRST NAME" required>
-        <br>
-        <br>
         <label for=""></label>
         <input type="text" class="lastn" name="lname" id="lname" placeholder="LAST NAME" required>
-        <br>
-        <br>
         <label for=""></label>
         <input type="email" class="email"name="email" id="email" placeholder="EMAIL ADDRESS" required>
-        <br><br>
         <label for=""></label>
         <input type="password" class="password1" name="pass1" id="pass1" placeholder="PASSWORD" required>
-        <br><br>
         <label for=""></label>
-        <input type="password"class="password2" name="pass2" id="pass2" placeholder="CONFIRM PASSWORD" required>
-        <br><br>    
+        <input type="password"class="password2" name="pass2" id="pass2" placeholder="CONFIRM PASSWORD" required>    
         <button type="submit" class="col align-self-center selecteduppertext">Sign Up</button>
     </form>
     </div>
